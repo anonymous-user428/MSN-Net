@@ -17,6 +17,10 @@ section_00_0000.wav	ToyDrone	<dir>/dcase2023_t2/evaluation/ToyDrone/test/section
 section_00_0001.wav	ToyDrone	<dir>/dcase2023_t2/evaluation/ToyDrone/test/section_00_0001.wav
 ```
 
+### Download Model Checkpoints
+
+Please download the all the models from [huggingface](https://huggingface.co/anonymous-user428/MSE-Net), and put them under `exp/experiment_model_MSN/chkpts`.
+
 ### Run
 
 ```
