@@ -11,7 +11,7 @@ class dcase23_t2_dataset(Dataset):
         super().__init__()
         data_dir = "./data"
         task = "dcase2023_t2"
-        metadata_path= f"{data_dir}/{task}/metadata.csv"
+        metadata_path= f"{data_dir}/{task}/metadata.tsv"
         assert os.path.exists(metadata_path), "Error - Metadata is missing!"
         df_all = pd.read_csv(metadata_path, sep='\t')
         df_train = df_all[df_all.label == 'normal']
@@ -83,8 +83,8 @@ class dcase2023_t2_testset(Dataset):
     def __init__(self, mtype, wave_length=10) -> None:
         super().__init__()
         data_dir = "./data/dcase2023_t2"
-        dev_metadata_path= f"{data_dir}/metadata.csv"
-        eval_metadata_path=f"{data_dir}/test_metadata.csv"
+        dev_metadata_path= f"{data_dir}/metadata.tsv"
+        eval_metadata_path=f"{data_dir}/test_metadata.tsv"
         assert os.path.exists(dev_metadata_path) and os.path.exists(eval_metadata_path), "metadata is missing!"
         df_dev_all = pd.read_csv(dev_metadata_path, sep='\t')
         df_dev_test = df_dev_all[(df_dev_all['train/test']=='test') & (df_dev_all.mtype == mtype)]
