@@ -1,4 +1,4 @@
-# Multi-scale Network (MSN-Net)
+# Multi-scale Scanning Network (MSN-Net)
 This is the implementation of the MSN-Net.
 
 ### Data Preparation
