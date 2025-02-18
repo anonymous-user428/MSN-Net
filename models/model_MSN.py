@@ -23,7 +23,7 @@ class dcase2023_task2:
                  n_epochs=10, 
                  batch_size=32,
                  device=torch.device('cpu'),
-                 exp_dir="/DKUdata/2020/zhangyc/workspace/ASD/wilkinghoff_dc23/exp/exp1",
+                 exp_dir="./exp",
                  wave_length=18,
                  SEED=3407,
                  logfile='./logs.tmp', 
